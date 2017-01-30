@@ -5,7 +5,7 @@ angular.module('MenuCategoriesApp', [])
 .controller('NarrowItDownController', NarrowItDownController)
 .controller('ItemDirectiveController', ItemDirectiveController)
 .service('MenuCategoriesService', MenuCategoriesService)
-.constant('ApiBasePath', "http://davids-restaurant.herokuapp.com")
+.constant('ApiBasePath', "https://davids-restaurant.herokuapp.com")
 .directive('foundItems', foundItemsDirective);
 
 function foundItemsDirective() {
