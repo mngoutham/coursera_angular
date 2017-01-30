@@ -1,0 +1,25 @@
+<div>
+  <ul>
+    <table>
+      <tr ng-if="fc.items.length > 0">
+        <th>Short Name</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Link</th>
+      </tr>
+      <!-- <li ng-repeat="item in fc.items"> -->
+        <tr ng-repeat="item in fc.items">
+          <td>{{ item.short_name }}</td>
+          <td>{{ item.name }} </td>
+          <td>{{ item.description }}</td>
+          <td>
+            <button class="btn btn-secondary" ng-click="fc.onRemove({index:$index});">
+              Don't want this one!
+            </button>
+          </td>
+        </tr>
+      <!-- </li> -->
+    </table>
+  </ul>
+  <div class="error" ng-transclude></div>
+</div>
